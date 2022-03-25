@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+<listeners>
+
+<listener class-name="Academy.E2EProjectFramework.Listeners"> </listener>
+
+</listeners>
+
+	<test  name="ValidateTitle" >
+		<classes>
+			<class name="Academy.E2EProjectFramework.ValidateTitle" />
+		</classes>
+	</test>
+
+	<test name="ValidateNavigation">
+		<classes>
+			<class name="Academy.E2EProjectFramework.ValidateNavigationBar" />
+		</classes>
+	</test>
+
+	<test  name="VerifyPopup">
+		<classes>
+			<class name="Academy.E2EProjectFramework.VerifyPopUp" />
+		</classes>
+	</test>
+	<test name="HomePage">
+		<classes>
+
+			<class name="Academy.E2EProjectFramework.HomePageTest" />
+		</classes>
+
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

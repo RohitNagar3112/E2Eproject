@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <listeners>
+    <listener class-name="Academy.E2EProjectFramework.Listeners"/>
+  </listeners>
+  <test name="ValidateTitle(failed)" parallel="tests">
+    <classes>
+      <class name="Academy.E2EProjectFramework.ValidateTitle">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="homepagelanding"/>
+          <include name="openURl"/>
+        </methods>
+      </class> <!-- Academy.E2EProjectFramework.ValidateTitle -->
+    </classes>
+  </test> <!-- ValidateTitle(failed) -->
+  <test name="ValidateNavigation(failed)" parallel="tests">
+    <classes>
+      <class name="Academy.E2EProjectFramework.ValidateNavigationBar">
+        <methods>
+          <include name="homepagelanding"/>
+          <include name="openURl"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- Academy.E2EProjectFramework.ValidateNavigationBar -->
+    </classes>
+  </test> <!-- ValidateNavigation(failed) -->
+  <test name="VerifyPopup(failed)" parallel="tests">
+    <classes>
+      <class name="Academy.E2EProjectFramework.VerifyPopUp">
+        <methods>
+          <include name="openURl"/>
+          <include name="closeBrowser"/>
+          <include name="homepagelanding"/>
+        </methods>
+      </class> <!-- Academy.E2EProjectFramework.VerifyPopUp -->
+    </classes>
+  </test> <!-- VerifyPopup(failed) -->
+  <test name="HomePage(failed)" parallel="tests">
+    <classes>
+      <class name="Academy.E2EProjectFramework.HomePageTest">
+        <methods>
+          <include name="homepagelanding" invocation-numbers="0"/>
+          <include name="closeWindow"/>
+        </methods>
+      </class> <!-- Academy.E2EProjectFramework.HomePageTest -->
+    </classes>
+  </test> <!-- HomePage(failed) -->
+</suite> <!-- Failed suite [Suite] -->
