@@ -25,6 +25,13 @@ public class ValidateTitle extends Base {
 		driver.get(url);
 
 	}
+	
+	@Test
+	public void GitTestBranch() throws IOException, InterruptedException {
+
+		System.out.println("Adding for git");
+		System.out.println("Adding for branch develop  git and addding method");
+	}
 
 	@Test
 	public void validateApptitle() throws IOException, InterruptedException {
@@ -35,7 +42,8 @@ public class ValidateTitle extends Base {
 		Assert.assertEquals(lp.getTitle().getText(), "FEATURED COURSES");
 		System.out.println(lp.getTitle().getText());
 		log.info("Succesully validated Text message");
-		System.out.println("Adding for git")
+		System.out.println("Adding for git");
+		System.out.println("Adding for branch develop  git");
 	}
 
 	@Test
