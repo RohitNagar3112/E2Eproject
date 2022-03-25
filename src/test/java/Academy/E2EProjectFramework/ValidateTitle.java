@@ -35,7 +35,7 @@ public class ValidateTitle extends Base {
 		Assert.assertEquals(lp.getTitle().getText(), "FEATURED COURSES");
 		System.out.println(lp.getTitle().getText());
 		log.info("Succesully validated Text message");
-
+		System.out.println("Adding for git")
 	}
 
 	@Test
